@@ -1,12 +1,10 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.ArrayDeque;
-@Data
-@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
 public class SnakeAndLadderGame {
 
@@ -18,8 +16,6 @@ public class SnakeAndLadderGame {
         board= new GameBoard(size);
         dice = new Dice(countDice);
         playersturn = new ArrayDeque<>();
-//        playersturn.addLast(new Player("Mukesh",1));
-//        playersturn.addLast(new Player("Sharika",1));
     }
 
 
